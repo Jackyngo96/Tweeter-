@@ -1,0 +1,12 @@
+header {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  height: 640px;
+  background:yellow; 
+  color:#FFFFFF; 
+  width: 100%;
+  background-color: #fefefe;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+} 
