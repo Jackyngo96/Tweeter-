@@ -1,0 +1,27 @@
+nav {
+  display:flex;
+  justify-content:space-between;
+  height: 120px;
+  background:#4056A1; 
+  color:#FFFFFF; 
+  width: 100%;
+  font-family: 'Bungee', cursive;
+  align-items: center
+} 
+
+nav span {
+  margin-left: 1.5em;
+} 
+
+.nav-right {
+  display:flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.fa-solid.fa-angles-down{ 
+  color:red
+}
