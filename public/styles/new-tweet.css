@@ -1,0 +1,23 @@
+section textarea{ 
+  background-color: #f4f1ec;
+  width: 100%;
+  border: none;
+  border-bottom: 5px solid #545149
+}
+
+section button { 
+  color:#FFFFFF;
+  background:#4056A1; 
+  font-family: 'Bungee', cursive;
+  border: none
+} 
+
+section output { 
+  font-family: 'Bungee', cursive;
+  display:flex;
+  justify-content:flex-end;
+} 
+
+.negative{ 
+  color:red;
+}
