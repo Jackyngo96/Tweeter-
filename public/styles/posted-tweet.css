@@ -9,15 +9,21 @@ article {
   justify-content:space-between;
   align-items: center;
   flex-direction: row;
-  height: 50px;
+  height: 80px;
   background:none;
   color: #545149; 
   width: 100%;
   background-image: none; 
 } 
 
-.tweet-header span{ 
+.posted-tweet-left{ 
+  display:flex;
+  align-items: center;
   margin-left: 1.5em;
+} 
+
+.posted-tweet-left span{ 
+  margin-left: 0.2em;
 } 
 
 .posted-tweet-right{ 
