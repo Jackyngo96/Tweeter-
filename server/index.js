@@ -36,6 +36,17 @@ app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
 
-app.post("/tweets", (req, res) => { 
-
+app.post("/jacky", (req, res) => { 
+console.log(req)
+res.send({
+  user: {
+    name: "Newton",
+    avatars: "https://i.imgur.com/73hZDYK.png",
+    handle: "@SirIsaac",
+  },
+  content: {
+    text: "If I have seen further it is by standing on the shoulders of giants",
+  },
+  created_at: 1461116232227,
+})
 });

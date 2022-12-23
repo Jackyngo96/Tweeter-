@@ -37,8 +37,12 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
     <script type="text/javascript" src="/scripts/mouseover.js"></script>
+    <script type="text/javascript" src="/scripts/tweet-submission.js"></script>
   </head>
 
   <body>
@@ -53,7 +57,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="page-header">
       <div>
         <img src="/images/profile-hex.png" />
       </div>
@@ -76,35 +80,33 @@
               id="tweet-counter"
               class="counter"
               for="tweet-text"
-              >140</output
-            >
+              >140
+            </output>
           </div>
         </form>
       </section>
 
-      <section class="posted-tweets">
-        <article>
-          <header class="tweet-header">
-            <div class="posted-tweet-left">
-            <img src="https://i.imgur.com/73hZDYK.png" />
-            <span> Jacky Ngo</span>
+      <section id="tweets-container">
+        <!-- <article class="tweets">
+          <header>
+            <div class = header-right>
+            <img class ="avatar" src="https://i.imgur.com/73hZDYK.png" />
+            <h5 class ="name" >Jacky Ngo</h5>
             </div>
-            <div class="posted-tweet-right">
-              <span>@jayengeo</span>
-            </div>
+            <h5 class ="handle" >@jayengeo</h5>
           </header>
 
-          <section class="tweet">Hello World!</section>
+          <p>Hello World!</p>
 
           <footer class="posted-tweet-footer">
-            <span>10 days ago</span>
+            <h5>10 days ago</h5>
             <div class="icons">
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
               <i class="fa-solid fa-heart"></i>
             </div>
           </footer>
-        </article>
+        </article> -->
       </section>
     </main>
   </body>

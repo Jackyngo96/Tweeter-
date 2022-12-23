@@ -2,21 +2,22 @@ $(document).ready(function () {
   console.log("ready");
   // --- our code goes here ---
 
-  const $posted = $(".posted-tweets");
+  const $tweet = $(".tweets");
   const $flag = $(".fa-solid.fa-flag");
   const $retweet = $(".fa-solid.fa-retweet");
   const $heart = $(".fa-solid.fa-heart");
 
-  $posted.on("mouseover", function (event) {
-    $posted.addClass("shadow");
+  $tweet.on("mouseover", function (event) {
+    $(this).addClass("shadow");
+
   });
 
-  $posted.on("mouseout", function (event) {
-    $posted.removeClass("shadow");
+  $tweet.on("mouseout", function (event) {
+    $tweet.removeClass("shadow");
   });
 
   $flag.on("mouseover", function (event) {
-    $flag.addClass("flag");
+    $(this).addClass("flag");
   });
 
   $flag.on("mouseout", function (event) {
@@ -24,7 +25,7 @@ $(document).ready(function () {
   });
 
   $retweet.on("mouseover", function (event) {
-    $retweet.addClass("retweet");
+    $(this).addClass("retweet");
   });
 
   $retweet.on("mouseout", function (event) {
@@ -32,7 +33,7 @@ $(document).ready(function () {
   });
 
   $heart.on("mouseover", function (event) {
-    $heart.addClass("heart");
+    $(this).addClass("heart");
   });
 
   $heart.on("mouseout", function (event) {
