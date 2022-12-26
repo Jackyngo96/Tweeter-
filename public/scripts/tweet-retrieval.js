@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   console.log("ready");
   // --- our code goes here ---
@@ -11,4 +10,3 @@ $(document).ready(function () {
    console.log(postTweet($(this).serialize()))
   }); 
 })
-
