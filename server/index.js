@@ -37,6 +37,4 @@ app.listen(PORT, () => {
 });
 
 app.post("/tweets", (req, res) => { 
-console.log(req)
-res.send('yo')
 });

@@ -65,16 +65,16 @@
   color:#4056A1;  
 } 
 
-.shadow{ 
+.tweets:hover { 
   box-shadow: 10px 5px 5px grey;
 }
 
-.flag{ 
+#flag:hover{ 
   color:orange;
 } 
-.retweet{ 
+#retweet:hover{ 
   color:orange;
 } 
-.heart{ 
+#heart:hover{ 
   color:orange;
 }
