@@ -58,6 +58,20 @@ const loadtweets = function () {
   });
 };
 
+const appendError = function (error){
+  $(".new-tweet").prepend(
+    $("<span class='error'>")
+      .text('⚠️ ' + error + ' ⚠️')
+      .slideDown()
+      .delay(3500)
+      .hide(500)
+  );
+}; 
+
+const removeError = () => {
+  $('.error').remove();
+};
+
 $(document).ready(function () {
   console.log("ready");
   loadtweets();
@@ -65,11 +79,12 @@ $(document).ready(function () {
   const $form = $("form");
   $form.on("submit", function (event) {
     event.preventDefault();
+    removeError();
     const serializedData = $(this).serialize();
     if ($("#tweet-text").val() === "" || null) {
-      alert("You cannot post a blank tweet");
+      appendError("You cannot post a blank tweet");
     } else if ($("#tweet-text").val().length > 140) {
-      alert("Your tweet is too long!");
+      appendError("Your tweet is too long!");
     } else {
       $.post("/tweets", serializedData).then((response) => {
         loadtweets();
