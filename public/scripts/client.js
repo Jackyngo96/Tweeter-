@@ -3,9 +3,14 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
+const escaped = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 const createTweetElement = function (tweet) {
+  const timeDelta = moment(tweet.created_at).fromNow()
   const $tweet = $(`
   <article class="tweets">
   <header>
@@ -16,10 +21,10 @@ const createTweetElement = function (tweet) {
   <h5 class ="handle">${tweet.user.handle}</h5>
   </header>
   
-  <p>${tweet.content.text}</p> 
+  <p>${escaped(tweet.content.text)}</p> 
   
   <footer class="posted-tweet-footer">
-  <h5>${tweet.created_at}</h5>
+  <h5>${timeDelta}</h5>
   <div class="icons">
   <i class="fa-solid fa-flag" id="flag"></i>
   <i class="fa-solid fa-retweet" id="retweet"></i>
@@ -63,8 +68,8 @@ const appendError = function (error){
     $("<span class='error'>")
       .text('⚠️ ' + error + ' ⚠️')
       .slideDown()
-      .delay(3500)
-      .hide(500)
+      .delay(4000)
+      .hide(600)
   );
 }; 
 
