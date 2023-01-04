@@ -3,9 +3,35 @@
   justify-content:center;
   align-items: center;
   flex-direction: column;
-  height: 640px;
-  background:rgba(0, 27, 32, 0.602); 
-  color:#FFFFFF; 
+  height: 100%;
   width: 100%;
+  background:#4056A1;
+  color:#FFFFFF; 
   background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-} 
+  padding-top: 8rem;
+}  
+
+@media (min-width: 1024px) { 
+
+  .page-header{ 
+    display:flex;
+    margin-top:15% ;
+    margin-left:5%;
+    width: 25%;
+    height: 50%; 
+    padding-top:0;
+  } 
+
+  .profile-picture{
+    margin-top: 5%;
+  } 
+
+  .user-name{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+
+
+}

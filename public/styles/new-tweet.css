@@ -1,5 +1,5 @@
 .new-tweet { 
-  margin-top: 40px;
+  padding-top: 8rem;
 }
 
 section textarea{ 
@@ -24,4 +24,8 @@ section output {
 
 .negative{ 
   color:red;
+} 
+
+.tweet-button:hover { 
+  box-shadow: 10px 5px 5px grey;
 }
