@@ -8,7 +8,7 @@ This repository is the starter code for the project: Students will fork and clon
 !["Front Page](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/Tweeter-homepage.PNG?raw=true)
 
 
-!["App Functionality"](https://github.com/Jackyngo96/-tinyapp/blob/master/docs/URLSpage.PNG?raw=true)
+!["App Functionality"](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/compressed.mp4?raw=true)
 
 ## Getting Started
 
