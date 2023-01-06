@@ -8,17 +8,14 @@ This repository is the starter code for the project: Students will fork and clon
 !["Front Page](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/Tweeter-Front-Page.PNG?raw=true)
 
 
-!["App Functionality"](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/compressed.mp4?raw=true)
+!["App Functionality"](https://www.loom.com/share/fe5927151664411997ca9be0a3adf264)
 
-## Getting Started
-
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
 - Express
-- Node 5.10.x or above
+- Node 5.10.x or above 
+- Body-parser 1.15.2
+- Chance 1.0.2
+- Md5 2.1.0
+- Moment 2.29.4
