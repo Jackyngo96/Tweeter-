@@ -10,7 +10,7 @@ const escaped = function (str) {
 };
 
 const createTweetElement = function (tweet) {
-  const timeDelta = moment(tweet.created_at).fromNow()
+  const timeDelta = moment(tweet.created_at).fromNow();
   const $tweet = $(`
   <article class="tweets">
   <header>
@@ -63,18 +63,18 @@ const loadtweets = function () {
   });
 };
 
-const appendError = function (error){
+const appendError = function (error) {
   $(".new-tweet").prepend(
     $("<span class='error'>")
-      .text('⚠️ ' + error + ' ⚠️')
+      .text("⚠️ " + error + " ⚠️")
       .slideDown()
       .delay(4000)
       .hide(600)
   );
-}; 
+};
 
 const removeError = () => {
-  $('.error').remove();
+  $(".error").remove();
 };
 
 $(document).ready(function () {

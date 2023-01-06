@@ -22,6 +22,11 @@ section output {
   justify-content:flex-end;
 } 
 
+section label { 
+  font-family: 'Bungee', cursive;
+  font-size:20px ;
+}
+
 .negative{ 
   color:red;
 } 
