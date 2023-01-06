@@ -6,7 +6,7 @@ Tweeter is a simple, single-page Twitter clone, it is a is a responsive app buil
 !["Front Page](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/Tweeter-Front-Page.PNG?raw=true)
 
 
-!["App Functionality"](https://www.loom.com/share/fe5927151664411997ca9be0a3adf264)
+!["App Functionality"](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/Tweeter-functionality.gif?raw=true)
 
 
 ## Dependencies
