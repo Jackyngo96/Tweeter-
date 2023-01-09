@@ -3,12 +3,15 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
+// Escape function to prevent malicious code injection
 const escaped = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+// Function which creates new dynamic tweets
 const createTweetElement = function (tweet) {
   const timeDelta = moment(tweet.created_at).fromNow();
   const $tweet = $(`
@@ -36,10 +39,12 @@ const createTweetElement = function (tweet) {
   return $tweet;
 };
 
+//Resets available characters counter
 const resetCounter = function () {
   $(".counter").text(140);
 };
 
+//Renders home page with new tweet evrytime a tweet is submitted
 const renderTweets = function (tweets) {
   const $container = $("#tweets-container");
   $container.empty();
@@ -49,6 +54,7 @@ const renderTweets = function (tweets) {
   }
 };
 
+// Grabs JSON data from stored tweets
 const loadtweets = function () {
   $.ajax({
     url: "tweets",
@@ -63,6 +69,7 @@ const loadtweets = function () {
   });
 };
 
+// Displays error above text area when an error is detected
 const appendError = function (error) {
   $(".new-tweet").prepend(
     $("<span class='error'>")
@@ -73,24 +80,31 @@ const appendError = function (error) {
   );
 };
 
+//Removes error message
 const removeError = () => {
   $(".error").remove();
 };
 
+// Implments once page is loaded
 $(document).ready(function () {
   console.log("ready");
   loadtweets();
 
+  // Submit form event handler
   const $form = $("form");
   $form.on("submit", function (event) {
     event.preventDefault();
     removeError();
     const serializedData = $(this).serialize();
+    
+    // Detects validation errors
     if ($("#tweet-text").val() === "" || null) {
       appendError("You cannot post a blank tweet");
     } else if ($("#tweet-text").val().length > 140) {
       appendError("Your tweet is too long!");
     } else {
+      
+      // Posts tweets
       $.post("/tweets", serializedData).then((response) => {
         loadtweets();
         $(this).children("textarea").val("");
