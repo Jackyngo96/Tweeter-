@@ -8,6 +8,12 @@ Tweeter is a simple, single-page Twitter clone, it is a is a responsive app buil
 
 !["App Functionality"](https://github.com/Jackyngo96/Tweeter-/blob/master/docs/Tweeter-functionality.gif?raw=true)
 
+## How to run the app 
+
+1. Clone this repository onto your local device.
+2. Install all the dependencies listed below using the `npm install` command 
+3. Start the web server using the `npm run local` command while inside the root directory of this project
+4. Go to http://localhost:8080/ in your browser to view the application
 
 ## Dependencies
 
