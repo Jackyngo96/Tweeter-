@@ -40,4 +40,8 @@ body main {
     display: flex; 
     flex-direction: row;
   }
+
+  body main { 
+    margin-top:7% ;
+} 
 }

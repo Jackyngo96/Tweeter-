@@ -23,8 +23,8 @@ section output {
 } 
 
 section label { 
-  font-family: 'Bungee', cursive;
-  font-size:20px ;
+  font-size:30px ;
+  font-weight: 1000;
 }
 
 .negative{ 
@@ -34,3 +34,4 @@ section label {
 .tweet-button:hover { 
   box-shadow: 10px 5px 5px grey;
 }
+

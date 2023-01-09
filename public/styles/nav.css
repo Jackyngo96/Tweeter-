@@ -2,12 +2,12 @@ nav {
   display:flex;
   justify-content:space-between;
   height: 120px;
-  background:#4056A1; 
+  background:#4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
   color:#FFFFFF; 
   width: 100%;
   font-family: 'Bungee', cursive;
   align-items: center;
-  position: fixed;
 } 
 
 nav span {
@@ -25,4 +25,12 @@ nav span {
 
 .fa-solid.fa-angles-down{ 
   color:red
+} 
+
+@media (min-width: 1024px) {  
+  nav { 
+    background:#4056A1;
+    position: fixed;
+  }
+
 }
