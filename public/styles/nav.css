@@ -27,6 +27,10 @@ nav span {
   color:red
 } 
 
+.profile-picture{ 
+  margin-top:none ;
+}
+
 @media (min-width: 1024px) {  
   nav { 
     background:#4056A1;
